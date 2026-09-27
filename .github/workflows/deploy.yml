@@ -38,13 +38,16 @@ jobs:
       - name: Construire le site
         run: npm run build
 
+      - name: Verifier le build
+        run: ls -la build && ls -la build/client
+
       - name: Configurer GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Preparer les fichiers
         uses: actions/upload-pages-artifact@v3
         with:
-          path: app/view/front-office/build/client
+          path: ./app/view/front-office/build/client
 
   deploy:
     environment:
