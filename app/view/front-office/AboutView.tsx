@@ -1,5 +1,5 @@
 export default function ABOUT(){
 return (
-    <div>yasmina</div>
+    <div>yasminasss</div>
 )
 }
