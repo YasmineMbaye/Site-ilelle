@@ -19,10 +19,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: app/view/front-office
-
     steps:
       - name: Recuperer le projet
         uses: actions/checkout@v4
@@ -47,7 +43,7 @@ jobs:
       - name: Preparer les fichiers
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./app/view/front-office/build/client
+          path: build/client
 
   deploy:
     environment:
