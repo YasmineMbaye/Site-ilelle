@@ -5,7 +5,7 @@ import Icontext from "~/components/ui/Icontext";
 
 export default function HOME(){
 return (
-    <div className=" min-h-150 bg-cover bg-center bg-no-repeat  px-4 sm:px-6 md:px-10      src={`${import.meta.env.BASE_URL}images/logo.png`}
+    <div className=" min-h-150 bg-cover bg-center bg-no-repeat  px-4 sm:px-6 md:px-10
     pt-12 md:pt-20 "
      style={{backgroundImage:"linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url('${import.meta.env.BASE_URL}images/background.png')"}} >
 
