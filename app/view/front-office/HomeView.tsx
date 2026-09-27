@@ -7,7 +7,9 @@ export default function HOME(){
 return (
     <div className=" min-h-150 bg-cover bg-center bg-no-repeat  px-4 sm:px-6 md:px-10
     pt-12 md:pt-20 "
-     style={{backgroundImage:"linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url('${import.meta.env.BASE_URL}images/background.png')"}} >
+   style={{
+  backgroundImage: `linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url('${import.meta.env.BASE_URL}images/background.png')`
+}} >
 
         <div className=" flex flex-col items-center text-center md:items-start md:text-left" >
          <div className="mb-4 w-fit font-['Playfair_Display'] text-4xl font-semibold leading-[0.95]  md:text-6xl lg:text-7xl text-[#FFF9F2] ">Votre marque, <br /> <span className="text-[#E9A15B]">notre expertise</span></div>
