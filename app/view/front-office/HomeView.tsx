@@ -1,11 +1,15 @@
 import { BadgeCheck, Headset, Pencil, Truck } from "lucide-react";
 import Button from "~/components/ui/Button";
 import Icontext from "~/components/ui/Icontext";
+import SectionTitle from "~/components/ui/SectionTitle";
+import ServiceSection from "~/components/ui/ServiceSection";
 
 
 export default function HOME(){
 return (
-    <div className=" flex justify-center min-h-150 bg-cover bg-center bg-no-repeat  px-2 
+    <div>
+    <section>
+        <div className=" flex justify-center min-h-150 bg-cover bg-center bg-no-repeat  px-2 
     pt-12 md:pt-20 "
    style={{
   backgroundImage: `linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url('${import.meta.env.BASE_URL}images/background.png')`
@@ -82,5 +86,13 @@ return (
         </div>
 
      </div>
+    </section>
+
+  <section className="bg-[#FFF9F2]  pt-10">
+    <ServiceSection/>
+   </section>
+
+
+    </div>
 )
 }

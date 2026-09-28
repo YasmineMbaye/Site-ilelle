@@ -1,4 +1,5 @@
 import type { LucideIcon } from "lucide-react";
+import type { IconTextProps } from "~/models/type";
 
 
 export default function Icontext({text, icon: Icon, border=false}:IconTextProps){

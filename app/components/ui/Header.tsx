@@ -3,6 +3,7 @@ import Navitems from "./Navitems"
 import { Menu, X} from "lucide-react";
 import Button from "./Button";
 import { useState } from "react";
+import type { NavigationProps } from "~/models/type";
 
 export default function Header(){
   const [menuOpen, setMenuOpen] = useState(false);

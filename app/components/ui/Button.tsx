@@ -1,5 +1,6 @@
 import { ArrowRight, Phone } from "lucide-react";
 import { NavLink } from "react-router";
+import type { Buttons } from "~/models/type";
 
 
 
