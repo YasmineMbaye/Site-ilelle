@@ -27,7 +27,7 @@ export default function Header(){
           {SITE_MAP.map((page, index) => (
             <Navitems
               key={index}
-              pageProps={page} border={""} borderbold={""}            />
+              pageProps={page} border={""} borderbold={""}  color="text-black"   />
           ))}
 
           <Button
