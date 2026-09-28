@@ -2,7 +2,7 @@ import type { SectionTitleProps } from "~/models/type";
 
 export default function SectionTitle({label, title, highlight, description, color}:SectionTitleProps){
     return(
-        <div className=" max-w-xl flex flex-col gap-2  mb-4">
+        <div className=" max-w-xl flex flex-col gap-2  mb-4  px-4 ">
             <div className="flex justify-center gap-2 ">
                 <div className=" flex items-center"><div className=" h-px w-8 sm:w-12 bg-[#E9A15B] flex items-center"></div></div>
                 <div className="font-semibold uppercase text-sm text-black">{label}</div>

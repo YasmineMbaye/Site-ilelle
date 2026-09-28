@@ -9,7 +9,7 @@ export default function (){
             <div className="flex justify-center">  <SectionTitle label="Nos services" title="Des solution sur mesure" highlight="pour votre marque" description="Des solution d'impressions de personnalisation pour tout vos besoins mettre notre créativité et notre savoir-faire au service de vos projets"/>
               </div>
              <div className=" flex justify-center">
-                 <div className=" grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-7xl">
+                 <div className=" grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-7xl px-4">
                 {services.map((service)=>(
                 <ServiceCard key={service.number} {...service} />
               ))}
