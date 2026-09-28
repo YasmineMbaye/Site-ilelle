@@ -14,7 +14,7 @@ export default function SectionTitle({label, title, highlight, description, colo
                 <div className={`text-center font-['Playfair_Display'] font-semibold text-3xl md:text-4xl lg:text-5xl ${color ||"text-black"}`}>{title}</div>
                 <div className={`text-center font-['Playfair_Display'] font-semibold text-3xl md:text-4xl lg:text-5xl  ${color ||"text-[#E9A15B]"}`}>{highlight}</div>
             </div>
-            <div className="text-center font-['Poppins'] font-medium">{description}</div>
+            <div className="text-center font-['Poppins'] font-medium text-black">{description}</div>
         </div>
     )
 }
