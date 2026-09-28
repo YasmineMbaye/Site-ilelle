@@ -11,18 +11,18 @@ export default function Header(){
         <div className="bg-[#FFF9F2] flex justify-center p-2 border-b border-[#B65C12] ">
             <div className="flex justify-between w-full max-w-7xl  ">
             <div><img src={`${import.meta.env.BASE_URL}images/logo.png`} className="h-auto w-24 md:w-30"/></div>
-            <div className="  hidden md:flex gap-8  items-center text-black font-bold  ">
+            <div className="  hidden lg:flex gap-8  items-center text-black font-bold  ">
         {SITE_MAP.map((page: NavigationProps, index) => (
-          <Navitems key={index} pageProps={page} border="border-b-[#8F0D25] " borderbold="border-3" />
+          < Navitems key={index} pageProps={page} border="border-b-[#8F0D25] " borderbold="border-3" />
         ))}
         
         <Button text="Contactez-nous" actionpath="/" showArrow />
 
       </div>
-<button className="md:hidden" onClick={()=>setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu size={28} className="text-[#8F0D25]"/>}</button>
+<button className="lg:hidden" onClick={()=>setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu size={28} className="text-[#8F0D25]"/>}</button>
 
 {menuOpen && (
-        <div className="md:hidden flex flex-col gap-4 p-4">
+        <div className="lg:hidden flex flex-col gap-4 p-4">
 
           {SITE_MAP.map((page, index) => (
             <Navitems

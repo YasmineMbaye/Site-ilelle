@@ -36,7 +36,7 @@ export default function HOME() {
               />
             </div>
 
-            <div className="w-fit grid grid-cols-1 lg:grid-cols-4 gap-4">
+            <div className="w-fit grid grid-cols-2 lg:grid-cols-4 gap-4">
               <Icontext
                 text={
                   <>
