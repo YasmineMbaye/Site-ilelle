@@ -91,6 +91,12 @@ export default function HOME() {
       <section className="bg-[#FFF9F2]  pt-10">
         <ServiceSection />
       </section>
+      
+      <section className="  pt-10  min-h-100 bg-cover  bg-center bg-no-repeat" style={{
+            backgroundImage: ` url('${import.meta.env.BASE_URL}images/bgsolution.png')`,
+          }}>
+        
+      </section>
     </div>
   );
 }
