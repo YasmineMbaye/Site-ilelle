@@ -3,6 +3,7 @@ import Button from "~/components/ui/Button";
 import Icontext from "~/components/ui/Icontext";
 import SectionTitle from "~/components/ui/SectionTitle";
 import ServiceSection from "~/components/ui/ServiceSection";
+import SolutionSection from "~/components/ui/SolutionSection";
 
 export default function HOME() {
   return (
@@ -88,13 +89,14 @@ export default function HOME() {
         </div>
       </section>
 
-      <section className="bg-[#FFF9F2]  pt-10">
+      <section className="bg-[#FFF9F2]  py-10">
         <ServiceSection />
       </section>
       
-      <section className="  pt-10  min-h-100 bg-cover  bg-center bg-no-repeat" style={{
+      <section className="  py-10  min-h-100 bg-cover  bg-center bg-no-repeat" style={{
             backgroundImage: ` url('${import.meta.env.BASE_URL}images/bgsolution.png')`,
           }}>
+            <SolutionSection/>
         
       </section>
     </div>

@@ -7,7 +7,7 @@ type NavigationProps={
 }
 
 type Buttons={
-    text:string,
+    text:ReactNode,
     actionpath:string,
      background?:string,
       color?:string,
@@ -16,7 +16,7 @@ type Buttons={
        px?:string,
        py?:string
        showPhone?:boolean
-       
+       tailletext?:string
        
 
 }
@@ -33,6 +33,9 @@ type SectionTitleProps={
     highlight:string;
     description:string
     color?:string
+    colortitle?:string
+     colorlabel?:string
+     colordescription?:string
 }
 type ServiceCardProps = {
   number?: string;
@@ -42,4 +45,13 @@ type ServiceCardProps = {
   icon?: ReactNode
    fleche?: ReactNode
    bgIcon:string
+}
+
+type SolutionCardProps={
+    number?:string
+    title?:string,
+  description? :string,
+  image? :stirng,
+  buttonText?:string,
+  colortext?:string,
 }

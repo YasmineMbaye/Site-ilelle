@@ -1,5 +1,5 @@
 import { ArrowRight, Box, FileText, Gift, PenLine, Shirt, Tag, Truck } from "lucide-react";
-import type { NavigationProps, ServiceCardProps } from "~/models/type";
+import type { NavigationProps, ServiceCardProps, SolutionCardProps } from "~/models/type";
 
 export const SITE_MAP:NavigationProps[]=[
     {
@@ -89,5 +89,36 @@ export const services:ServiceCardProps[] = [
     icon:<PenLine/>,
     fleche:<ArrowRight/>,
     bgIcon:"bg-[#E9A15B]"
+  },
+];
+
+
+
+export const solutions: SolutionCardProps[] = [
+  {
+    number: "01",
+    title: "Service à la carte",
+    description:
+      "Un besoin précis ? Choisissez parmi nos services selon vos envies.",
+    image: `${import.meta.env.BASE_URL}images/solution1.png`,
+    buttonText: "Découvrir les services",
+
+  },
+  {
+    number: "02",
+    title: "Package",
+    description:
+      "Des solutions complètes et avantageuses pour vos différents projets.",
+    image: `${import.meta.env.BASE_URL}images/solution2.png`,
+    buttonText: "Voir nos packages",
+  },
+  {
+    number: "03",
+    title: "Sur mesure",
+    description:
+      "Une idée unique ? Nous la créons sur mesure pour donner vie à votre projet.",
+    image: `${import.meta.env.BASE_URL}images/solution3.png`,
+    buttonText: "Demander un devis",
+    colortext:"text-white"
   },
 ];
